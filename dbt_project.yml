@@ -39,4 +39,11 @@ models:
   my_new_project:
     # Applies to all files under models/example/
     example:
-      +materialized: table
+      +materialized: view
+
+seeds:
+  my_new_project:  # use your actual project name here
+    customer_seed:
+      +schema: myfirstschema
+      +database: myfirstdb
+      +quote_columns: false

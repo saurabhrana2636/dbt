@@ -1,0 +1,11 @@
+CUSTOMER_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE,CITY,COUNTRY,CREATED_AT
+1,John,Doe,john@example.com,1234567890,New York,USA,2025-09-09
+2,Jane,Smith,,9876543210,London,UK,2025-09-09
+3,Alex,Johnson,alex@example.com,1231231234,Sydney,Australia,2025-09-09
+4,Maria,Gomez,maria@example.com,5554443333,Madrid,Spain,2025-09-09
+5,David,Lee,david@example.com,8887776666,Toronto,Canada,2025-09-09
+6,Sarah,Khan,,2223334444,Dubai,UAE,2025-09-09
+7,Michael,Brown,mike@example.com,9998887777,Chicago,USA,2025-09-09
+8,Linda,Green,linda@example.com,1112223333,Berlin,Germany,2025-09-09
+9,Robert,White,,4445556666,Paris,France,2025-09-09
+10,Sophia,Patel,sophia@example.com,7776665555,Mumbai,India,2025-09-09
