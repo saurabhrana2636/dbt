@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: myfirstschema
+    database: MYFIRSTDB
+    schema: MYFIRSTSCHEMA
+    tables:
+      - name: customer
+        description: "Customer master data"
+        columns:
+          - name: CUSTOMER_ID
+            tests:
+              - not_null
+              - unique
+          - name: EMAIL
+            tests:
+              - not_null
+      - name: company
+        description: "Company data linked to customer"
+        columns:
+          - name: COMPANY_ID
+            tests:
+              - not_null
+              - unique
+          - name: CUSTOMER_ID
+            tests:
+              - relationships:
+                  to: source('myfirstschema','customer')
+                  field: CUSTOMER_ID

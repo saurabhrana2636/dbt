@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: customer_company
+    description: "Join of customer and company data"
+    columns:
+      - name: COMPANY_ID
+        tests:
+          - not_null
+      - name: CUSTOMER_ID
+        tests:
+          - unique
+    tests:
+      - test_duplicate_customer_company
